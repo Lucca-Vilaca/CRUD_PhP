@@ -1,3 +1,7 @@
+<?php
+    include('act.php')
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -31,7 +35,7 @@
                                 <input type="text" name="descricao" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <button type="submit" name="create_User" class="btn btn-primary">Salvar</button>
+                                <button type="submit" name="criar_tarefa" class="btn btn-primary">Salvar</button>
                             </div>
                         </form>
                     </div>

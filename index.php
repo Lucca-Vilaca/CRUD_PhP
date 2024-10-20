@@ -25,11 +25,16 @@ require 'conect.php';
                         <h4>Lista de Tarefas
                             <a class="btn btn-primary float-end" href="criar_tarefa.php">Adicionar tarefa</a>
                         </h4>
+                        <form method="GET" action="index.php" class="d-flex mt-2">
+                            <input type="text" name="search" class="form-control me-2" placeholder="Pesquisar por título">
+                            <button type="submit" class="btn btn-outline-success">Pesquisar</button>
+                        </form>
                     </div>
                     <div class="card-body">
                         <table class="table table-bordered table striped">
                             <thead>
                                 <tr>
+                                    <th>Id</th>
                                     <th>Título</th>
                                     <th>Descrição</th> 
                                 </tr>
@@ -40,12 +45,13 @@ require 'conect.php';
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>teste</td>
+                                    <td>Teste</td>
+                                    <td>Apenas Testando</td>
                                     <td>
-                                        <a class="btn btn-secondary btn-sm" href="">Visualizar</a>
-                                        <a class="btn btn-success btn-sm" href="">Editar</a>
-                                        <form action="" method="post" class="d-inline">
-                                            <button type="submit" name="delete_usuario" value="1" class="btn btn-danger btn-sm">Excluir</button>
+                                        <a href="editar_tarefa.php" class="btn btn-success btn-sm">Editar</a>
+                                        <form action="" method="POST" class="d-inline">
+                                            <button type="submit" name="deletar_tarefas" value="1" class="btn btn-danger btn-sm">Excluir
+                                            </button>
                                         </form>
                                     </td>
                                 </tr>
